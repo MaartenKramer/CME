@@ -598,6 +598,26 @@
                     "interactions": "",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "PlantDone",
+                    "type": "Button",
+                    "id": "354e75b7-2c01-406a-af99-3e9259433c59",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "HawkDone",
+                    "type": "Button",
+                    "id": "614f2c0b-ec5b-459d-bf6c-3300340c2dc5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -1027,6 +1047,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "GeneratorOn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f7aa63fe-2d24-4181-9b3a-98ba40a47f43",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "PlantDone",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1ccc84b9-2540-4dae-864d-4a33041b3cc6",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "HawkDone",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

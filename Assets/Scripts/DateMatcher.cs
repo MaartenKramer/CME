@@ -4,6 +4,8 @@ using TMPro;
 
 public class DateMatcher : MonoBehaviour
 {
+    [SerializeField] private TerminalManager terminalManager;
+
     public TMP_InputField inputField;
     [SerializeField] private GameObject sendButton;
     [SerializeField] private Image inputFieldLine;
@@ -29,6 +31,7 @@ public class DateMatcher : MonoBehaviour
             sendButton.SetActive(false);
             errorText.SetActive(false);
             successText.SetActive(true);
+            terminalManager.CMEDone();
         }
 
         else
