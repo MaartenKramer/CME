@@ -3338,7 +3338,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: XX-XX-XXXX
+  m_text: DD-MM-YYYY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54fecad94ca3e1e45a55bdd0c05c96b8, type: 2}
   m_sharedMaterial: {fileID: 3717537665628744370, guid: 54fecad94ca3e1e45a55bdd0c05c96b8, type: 2}
@@ -7050,7 +7050,13 @@ MonoBehaviour:
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   colorFailed: {r: 1, g: 0, b: 0, a: 1}
   colorCorrect: {r: 0.08000004, g: 1, b: 0, a: 1}
-  correctDate: 09-05-2123
+  correctDateVersions:
+  - 09-05-2123
+  - 09052123
+  - 09 05 2123
+  - 09/05/2123
+  - 09.05.2123
+  inputText: {fileID: 1732161649}
 --- !u!4 &1808168126
 Transform:
   m_ObjectHideFlags: 0
@@ -7101,7 +7107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: 0}
+  m_AnchoredPosition: {x: -0.00024414062, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814720832
@@ -8264,7 +8270,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1808168125}
         m_TargetAssemblyTypeName: DateMatcher, Assembly-CSharp
-        m_MethodName: checkInput
+        m_MethodName: CheckInput
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

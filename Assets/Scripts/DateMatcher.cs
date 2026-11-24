@@ -16,32 +16,34 @@ public class DateMatcher : MonoBehaviour
     [SerializeField] private Color colorFailed;
     [SerializeField] private Color colorCorrect;
 
-    [SerializeField] private string correctDate;
+    [SerializeField] private string[] correctDateVersions;
+    [SerializeField] private TextMeshProUGUI inputText;
 
-    public void checkInput()
+    public void CheckInput()
     {
         string input = inputField.text;
 
-        if (input == correctDate)
+        foreach (string dateVersion in correctDateVersions)
         {
-            Debug.Log(input + " matches " + correctDate);
-            inputField.textComponent.color = colorCorrect;
-            inputFieldLine.color = colorCorrect;
-            inputField.interactable = false;
-            sendButton.SetActive(false);
-            errorText.SetActive(false);
-            successText.SetActive(true);
-            terminalManager.CMEDone();
+            if (input == dateVersion)
+            {
+                Debug.Log(input + " matches " + dateVersion);
+                inputField.textComponent.color = colorCorrect;
+                inputFieldLine.color = colorCorrect;
+                inputField.interactable = false;
+                sendButton.SetActive(false);
+                errorText.SetActive(false);
+                successText.SetActive(true);
+                terminalManager.CMEDone();
+                return;
+            }
+            else
+            {
+                Debug.Log(input + " does not match!");
+                inputField.textComponent.color = colorFailed;
+                inputFieldLine.color = colorFailed;
+            }
         }
-
-        else
-        {
-            Debug.Log(input + " does not match!");
-            inputField.textComponent.color = colorFailed;
-            inputFieldLine.color = colorFailed;
-        }
-
-
     }
 
     public void WhenSelected()

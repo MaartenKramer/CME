@@ -21,9 +21,7 @@ public class TurnOnAndOff : MonoBehaviour
     void Update()
     {
         if (generatorOnInput.action.IsPressed() && use)
-        {
             GeneratorOn();
-        }
     }
 
     private void TurnEverythingOff()

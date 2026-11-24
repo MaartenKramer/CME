@@ -7,6 +7,11 @@ public class ScreenSwitcher : MonoBehaviour
     [SerializeField] private TextMeshProUGUI speedText;
     [SerializeField] private int[] Speeds;
 
+    private void Start()
+    {
+        SwitchScreen();
+    }
+
     public void SwitchScreen()
     {
         foreach (GameObject objet in Screens)
